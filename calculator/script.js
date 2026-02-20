@@ -1,48 +1,21 @@
+var showResult = document.getElementById("showResult");
 
-//stp1= meghdar 1 ro az karbar begir , be number tabdil kon , zakhire kon
-let value1 = Number(prompt("عدد اول را وارد کنید : "))
+// values
+let numBtn = document.querySelectorAll(".val")
+numBtn.forEach(function (item) {
+    item.onclick = function () { showResult.value += this.value; };
+})
 
-//stp2= oparation ro az karbar begir va zakhire kon
-let oparation = prompt("عملگر مورد نظر را وارد کنید : ")
+// delete
+let numBtnDel = document.getElementById("del");
+numBtnDel.addEventListener("click", function () { showResult.value = showResult.value.slice(0, -1); });
+numBtnDel.addEventListener("dblclick", function () { showResult.value = ""; });
 
-//stp3= meghdar 2 ro az karbar begir , be number tabdil kon , zakhire kon
-let value2 = Number(prompt("عدد دوم را وارد کنید : "))
 
-//stp4= natije ro zakhire kon
-let result = 0;
+// Calculate
+let Calculate = document.getElementById("Calculate");
+Calculate.addEventListener("click", outpot);
 
-// stp5= oparation ro ba ( +,-,/,*,% ) moghayese kon va hamon ro anjam bede
-if (oparation == "+") {
-
-   result = value1 + value2;
-   alert(result)
-
-}
-else if (oparation == "-") {
-
-   result = value1 - value2;
-   alert(result)
-
-}
-else if (oparation == "/") {
-
-   result = value1 / value2;
-   alert(result)
-
-}
-else if (oparation == "*") {
-
-   result = value1 * value2;
-   alert(result)
-
-}
-else if (oparation == "%") {
-
-   result = value1 % value2;
-   alert(result)
-
-}
-else {
-   alert(" عملیات خواسته شده قابل انجام نمی باشد.لطفا از یکی از عملگر های       ( + , - , / , * , % ) استفاده کنید.")
-}
-
+function outpot() {
+    showResult.value = eval(showResult.value);
+};
