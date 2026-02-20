@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه تخفیف و مالیات</title>
+    <style>
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+
+        .container {
+            background-color: rgb(200, 214, 241);
+            width: 400px;
+            height: 400px;
+            border-radius: 30px;
+            direction: rtl;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        .container label {
+            margin: 25px 0 8px;
+            font-family: sans-serif;
+            font-weight: 600;
+
+        }
+
+        .container input {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 0;
+            outline: none;
+            font-size: 15px;
+            background-color: rgba(255, 255, 255, 0.527);
+        }
+
+        #result {
+            margin-top: 8px;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            height: 30px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+
+        button[type="submit"] {
+            margin-top: 30px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            font-family: sans-serif;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <label for="price">قیمت محصول مورد نظر:</label>
+            <input type="text" name="price" id="price">
+            <label for="discount">درصد تخفیف: </label>
+            <input type="text" name="discount" id="discount">
+            <label for="">قیمت نهایی با <span id="show-discount">...%</span> تخفیف و محاسبه 10% مالیات: </label>
+            <span id="result"></span>
+            <button type="submit" onclick="calculator()">قیمت نهایی را محاسبه کن</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
