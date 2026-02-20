@@ -2,54 +2,128 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(251, 247, 255);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
 }
 
 .container {
     max-width: 1800px;
     padding: 20px 30px;
     display: flex;
+    margin: auto;
 }
 
-.tagHtml{
+.lang​Used {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.tagHtml {
     color: white;
     background-color: #E34C26;
-    padding: 5px 15px ;
+    padding: 5px 15px;
     border-radius: 10px;
 }
 
-.tagCss{
+.tagCss {
     color: white;
     background-color: #663399;
-    padding: 5px 15px ;
+    padding: 5px 15px;
     border-radius: 10px;
 }
 
-.tagJs{
+.tagJs {
     color: white;
     background-color: #F1E05A;
-    padding: 5px 15px ;
+    padding: 5px 15px;
     border-radius: 10px;
 }
 
 /* header */
 .header {
-    justify-content: space-between;
-    align-items: center;
+    background-color: white;
     box-shadow: 0px 3px 10px rgb(231, 231, 231);
+    margin-bottom: 30px;
 }
 
-.header .lang​Used{
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .lang​Used p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* main */
+.main {
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* project Card */
+.projectCard {
+    max-width: 700px;
+    min-height: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgb(224, 224, 224);
+    margin: 10px;
 }
 
-.header .lang​Used p{
-    font-size: 15px;
-    font-weight: 600;
+.projectCard>div {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* img */
+.projectCard .projectDemoImg {
+    background-image: url(img/Calculation-of-discounts-and-taxes.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+}
+
+.projectCard:hover .projectDemoImg {
+    background-size: 110% 110%;
+}
+
+/* Information */
+.projectCard .projectInformation {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.projectCard h2 {
+    margin-bottom: 10px;
+}
+
+
+.projectCard .lang​Used {
+    font-size: 14px;
+    justify-content: flex-start;
 }
