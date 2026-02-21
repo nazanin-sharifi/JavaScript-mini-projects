@@ -1,0 +1,85 @@
+/* general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(28, 9, 41);
+}
+
+.container {
+    width: 1500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* product table styles */
+#products {
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    direction: rtl;
+    text-align: center;
+    padding: 10px 20px 30px;
+}
+
+#products td {
+    border-bottom: 1px solid rgb(142, 117, 165);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* operationBox */
+.operationBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btnOperation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btnOperation button {
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 25px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    background-color: rgb(142, 117, 165);
+    color: white;
+}
+
+.btnOperation #searchByNameProduct {
+    border-radius: 20px 20px 5px 5px;
+}
+
+.btnOperation input {
+    padding: 10px 20px;
+    border: 1px solid rgb(142, 117, 165);
+    border-radius: 5px 5px 20px 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    direction: rtl;
+    margin-top: -15px;
+}
+
+#showResult {
+    background-color: white;
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    direction: rtl;
+}

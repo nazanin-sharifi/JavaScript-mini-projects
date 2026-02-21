@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم مدیریت موجودی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="operationBox">
+            <p id="showResult" class="showResult"></p>
+            <div class="btnOperation">
+                <BUtton onclick="finishedProducts()">نمایش لیست محصولات ناموجود</BUtton>
+                <BUtton onclick="totalWarehouseValue()">محاسبه ارزش کل انبار</BUtton>
+                <BUtton id="searchByNameProduct" onclick="searchByNameProduct()">جستجو در محصولات با اسم محصول</BUtton>
+                <input type="text" id="productName" placeholder="نام محصول را وارد کنید...">
+            </div>
+        </div>
+        <div>
+            <table id="products">
+                <tr>
+                    <td>ردیف</td>
+                    <td>نام محصول</td>
+                    <td>قیمت</td>
+                    <td>موجودی</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
