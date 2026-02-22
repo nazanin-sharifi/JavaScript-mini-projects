@@ -43,7 +43,7 @@ A utility tool that calculates the final price of a product after applying user-
 
 ## 🔗 Live Demo
 You can explore and test all these projects live here:
-[👉 View Projects Demo](https://nazanin-sharifi.github.io/javascript-mini-projects/)
+[👉 View Projects Demo](https://nazanin-sharifi.github.io/JavaScript-mini-projects/)
 
 ---
 
@@ -97,7 +97,7 @@ The main goal of this repository is to demonstrate proficiency in:
 
 ## 🔗 مشاهده دمو (Live Demo)
 شما می‌توانید تمام این پروژه‌ها را به صورت زنده در لینک زیر مشاهده کنید:
-[👉 مشاهده پروژه‌ها](https://nazanin-sharifi.github.io/javascript-mini-projects/)
+[👉 مشاهده پروژه‌ها](https://nazanin-sharifi.github.io/JavaScript-mini-projects/)
 
 ---
 
